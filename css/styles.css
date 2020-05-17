@@ -4,3 +4,138 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+
+
+/* Wrap */
+
+.wrap {
+  display: flex;
+}
+
+
+
+/* Section Image */
+
+.image {
+  display: none;
+}
+
+
+/* Section Login */
+
+.login {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.login-img {
+  width: 100px;
+}
+
+.login-title {
+  font-size: 3em;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.form-label {
+  color: rgba(0,0,0,.4);
+  font-weight: 600;
+  position: absolute;
+  margin-bottom: .6em;
+}
+
+.form-input {
+  color: rgba(0,0,0,.8);
+  font-weight: 600;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  padding: 1.2em 0 .8em 0;
+  transition: all 300ms;
+  
+}
+
+.form-input:focus, .form-input:active {
+  outline: none;
+  padding-top: 2em;
+}
+
+
+
+.login-forgod {
+  text-align: right;
+
+}
+
+.login-forgod a {
+  color: rgba(0,0,0,.6);
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.login-submit {
+  margin-top: 1em;
+  font-family: inherit;
+  letter-spacing: .1em;
+  width: 100%;
+  height: 35px;
+  border-radius: 35px;
+  border: none;
+  background-color: #1989FF;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.login-submit:hover {
+  opacity: .9;
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+
+  /* Wrap */
+  .wrap {
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Image */
+  .image {
+    display: block;
+  }
+
+  .image .image-man {
+    height: 100vh;
+  }
+
+  /* Section Login */
+
+  .login {
+    position: static;
+    transform: translate(0);
+  }
+
+}
